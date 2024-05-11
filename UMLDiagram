@@ -1,0 +1,10 @@
++---------------------+                                                        +------------------------------+
+|         User        |  ----------------------(creates)---------------------->|           Builder            |
++---------------------+               +---------------------------+            +------------------------------+
+| - firstName: String |               | - firstName: String       |            | + firstName(String): Builder |
+| - lastName: String  |               | - lastName: String        |            | + lastName(String): Builder  |
+| - email: String     |               | - email: String           |            | + email(String): Builder     |
+| - address: String   | (optional)    | + address(String): Builder| (optional) |                              |
+| - phone: String     | (optional)    | + phone(String): Builder  | (optional) |                              |
+| - age: int          |               | + age(int): Builder       |            | + build(): User              |
++---------------------+               +---------------------------+            +------------------------------+
