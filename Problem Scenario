@@ -1,0 +1,19 @@
+Problem Scenario: Cumbersome User Registration
+Imagine you're developing an e-commerce platform where users can create accounts to purchase items. 
+Initially, you implemented a simple registration form with a standard constructor for the User class:
+However, you've encountered several issues with this approach:
+
+Registration Form Complexity:
+The constructor requires users to enter all fields in a specific order. 
+This can be cumbersome for users and lead to errors if they forget or enter information in the wrong order.
+
+Optional Fields:
+Not all users may want to provide complete information during registration. 
+Forcing them to enter values for unused fields can create a negative user experience.
+
+Data Consistency:
+The User class is mutable, meaning its fields can be changed after creation. 
+This can lead to unexpected issues if user profiles are updated later. 
+For example, if the address field is modified directly, it might bypass validation checks intended for the Builder.
+These issues can negatively impact user experience and potentially lead to data inconsistencies. 
+You need a more flexible and robust solution for user registration.
